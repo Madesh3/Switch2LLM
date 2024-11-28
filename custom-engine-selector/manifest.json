@@ -1,0 +1,56 @@
+{
+    "manifest_version": 3,
+    "name": "Custom Engine Selector",
+    "version": "1.0",
+    "description": "Allows users to select their default web browser engine (e.g., ChatGPT, Perplexity, Claude).",
+    "permissions": [
+        "storage",
+        "search"
+    ],
+    "host_permissions": ["<all_urls>"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "icon.png"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "options_page": "options.html",
+    "chrome_settings_overrides": {
+      "search_provider": {
+        "name": "Custom AI Search",
+        "keyword": "ai",
+        "is_default": true,
+        "encoding": "UTF-8",
+        "search_url": "https://www.perplexity.ai/search?q={searchTerms}",
+        "alternate_urls": [
+          "https://chat.openai.com/chat?q={searchTerms}",
+          "https://claude.ai/chat?q={searchTerms}",
+          "https://gemini.google.com/app?q={searchTerms}"
+        ]
+      }
+    },
+    "commands": {
+      "switch-to-chatgpt": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+1",
+          "mac": "Command+Shift+1"
+        },
+        "description": "Switch to ChatGPT"
+      },
+      "switch-to-perplexity": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+2",
+          "mac": "Command+Shift+2"
+        },
+        "description": "Switch to Perplexity"
+      },
+      "switch-to-claude": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+3",
+          "mac": "Command+Shift+3"
+        },
+        "description": "Switch to Claude"
+      }
+    }
+}
