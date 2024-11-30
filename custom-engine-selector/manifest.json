@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "LLM Query Extension",
+  "name": "Switch2LLM",
   "description": "Query ChatGPT, Claude, and Perplexity with custom prefixes.",
   "version": "1.0",
   "permissions": [
