@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Set Custom Prefixes</title>
+    <style>
+      body {
+        width: 200px;
+        font-family: Arial, sans-serif;
+      }
+      input {
+        width: 100%;
+        padding: 5px;
+        margin: 5px 0;
+      }
+      button {
+        width: 100%;
+        padding: 5px;
+        margin: 10px 0;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Set Custom Prefixes</h3>
+    <label for="chatgpt">ChatGPT Prefix:</label>
+    <input type="text" id="chatgpt" placeholder="e.g. chatgpt">
+    
+    <label for="claude">Claude Prefix:</label>
+    <input type="text" id="claude" placeholder="e.g. claude">
+
+    <label for="perplexity">Perplexity Prefix:</label>
+    <input type="text" id="perplexity" placeholder="e.g. perplexity">
+
+    <button id="saveButton">Save Prefixes</button>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

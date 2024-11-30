@@ -1,18 +1,25 @@
 {
   "manifest_version": 3,
-  "name": "LLM Query Opener",
-  "description": "Open queries with different LLMs from the address bar.",
+  "name": "LLM Query Extension",
+  "description": "Query ChatGPT, Claude, and Perplexity with custom prefixes.",
   "version": "1.0",
   "permissions": [
-    "activeTab"
+    "storage",
+    "tabs",
+    "omnibox"
   ],
-  "action": {
-    "default_popup": "popup.html"
-  },
   "background": {
     "service_worker": "background.js"
   },
   "omnibox": {
     "keyword": "llm"
-  }
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "host_permissions": [
+    "https://chatgpt.com/*",
+    "https://claude.ai/*",
+    "https://www.perplexity.ai/*"
+  ]
 }
