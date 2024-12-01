@@ -17,4 +17,4 @@ Switch2LLM is a lightweight Chrome extension that streamlines how you interact w
 Switch2LLM helps you quickly interact with your favourite AI models without the hassle of manually navigating multiple websites. Its customisability and ease of use make it an indispensable tool for enhancing your productivity.
 
 ## License
-Switch2LLM is licensed under the MIT License.
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
