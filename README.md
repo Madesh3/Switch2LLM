@@ -13,6 +13,10 @@ Switch2LLM is a lightweight Chrome extension that streamlines how you interact w
 3. Save your settings.
 4. In the browser's address bar, type `llm` followed by a space, your chosen prefix, and your query. Example: `llm chatgpt What is machine learning?`
 
+https://github.com/user-attachments/assets/98563866-6f9c-44ae-bef9-288c710fcfbd
+
+
+
 ## Why Switch2LLM?
 Switch2LLM helps you quickly interact with your favourite AI models without the hassle of manually navigating multiple websites. Its customisability and ease of use make it an indispensable tool for enhancing your productivity.
 
