@@ -1,6 +1,7 @@
 # Switch2LLM
 
 Switch2LLM is a lightweight Chrome extension that streamlines how you interact with Large Language Models (LLMs) like ChatGPT, Claude, and Perplexity. It enables quick, customisable access to these platforms through your browser's address bar.
+Go download the extension right now
 https://chromewebstore.google.com/detail/switch2llm/eojbhjdhggdledoppipgflnmkidecloh?hl=en-US&utm_source=ext_sidebar
 
 ## Features
